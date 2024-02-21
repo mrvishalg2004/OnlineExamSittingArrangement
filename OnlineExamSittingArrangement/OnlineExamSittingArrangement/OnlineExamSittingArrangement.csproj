@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{18938129-E1FE-45FB-9783-180B34B70E0C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineExamSittingArrangement</RootNamespace>
+    <AssemblyName>OnlineExamSittingArrangement</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="frmabout.aspx" />
+    <Content Include="frmContactus.aspx" />
+    <Content Include="frmhalltickeet.aspx" />
+    <Content Include="frmreg.aspx" />
+    <Content Include="frmSeatArrangement.aspx" />
+    <Content Include="frmshowsit.aspx" />
+    <Content Include="frmshowsitting.aspx" />
+    <Content Include="images\body_bg.gif" />
+    <Content Include="images\cp_bg.gif" />
+    <Content Include="images\cp_bottcorn.gif" />
+    <Content Include="images\cp_butt.gif" />
+    <Content Include="images\cp_imgabacus.jpeg" />
+    <Content Include="images\cp_imgdice.jpg" />
+    <Content Include="images\cp_line.gif" />
+    <Content Include="images\cp_nameband.gif" />
+    <Content Include="images\cp_sqrred.gif" />
+    <Content Include="images\ft_butt.gif" />
+    <Content Include="images\ft_sqrwhite.gif" />
+    <Content Include="images\ft_valid1.gif" />
+    <Content Include="images\ft_valid2.gif" />
+    <Content Include="images\lp_arrow.gif" />
+    <Content Include="images\lp_ashsqr.jpg" />
+    <Content Include="images\lp_box2bg.gif" />
+    <Content Include="images\lp_boxcorn1.gif" />
+    <Content Include="images\lp_boxcorn2.gif" />
+    <Content Include="images\lp_boxcorn3.gif" />
+    <Content Include="images\lp_boxcorn4.gif" />
+    <Content Include="images\lp_imgclient.jpg" />
+    <Content Include="images\lp_imgpair.jpg" />
+    <Content Include="images\rp_bg.gif" />
+    <Content Include="images\rp_bottcorn.gif" />
+    <Content Include="images\rp_topcorn.gif" />
+    <Content Include="images\tp_backgr.jpg" />
+    <Content Include="images\tp_logo.gif" />
+    <Content Include="images\tp_pipe.gif" />
+    <Content Include="images\welcome.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsCon.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frm1.Master.cs">
+      <DependentUpon>frm1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm1.Master.designer.cs">
+      <DependentUpon>frm1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="frmabout.aspx.cs">
+      <DependentUpon>frmabout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmabout.aspx.designer.cs">
+      <DependentUpon>frmabout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmContactus.aspx.cs">
+      <DependentUpon>frmContactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmContactus.aspx.designer.cs">
+      <DependentUpon>frmContactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmhalltickeet.aspx.cs">
+      <DependentUpon>frmhalltickeet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmhalltickeet.aspx.designer.cs">
+      <DependentUpon>frmhalltickeet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmreg.aspx.cs">
+      <DependentUpon>frmreg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmreg.aspx.designer.cs">
+      <DependentUpon>frmreg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeatArrangement.aspx.cs">
+      <DependentUpon>frmSeatArrangement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSeatArrangement.aspx.designer.cs">
+      <DependentUpon>frmSeatArrangement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmshowsit.aspx.cs">
+      <DependentUpon>frmshowsit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmshowsit.aspx.designer.cs">
+      <DependentUpon>frmshowsit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmshowsitting.aspx.cs">
+      <DependentUpon>frmshowsitting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmshowsitting.aspx.designer.cs">
+      <DependentUpon>frmshowsitting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="frm1.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1068</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

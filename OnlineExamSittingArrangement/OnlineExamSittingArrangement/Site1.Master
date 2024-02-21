@@ -1,0 +1,56 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="OnlineExamSittingArrangement.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Online Exam Sitting Arrangement</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div style="margin:auto; width:1000px;">
+  <div class="flt topblock"> <a href="" class="flt1 tp_txtplay">
+      Online Exam Sitting Arrangement</a>&nbsp;
+    <p style="clear:left; float:left; display:inline; width:1000px; margin:90px 0px 0px 0px;">
+        <a href="Default.aspx" class="flt1 tp_home2">Registration</a> 
+        <img src="images/tp_pipe.gif" height="18" alt="" class="flt tp_pipe" /> <a href="frmhalltickeet.aspx" class="flt tp_home">
+        Attendance</a> <img src="images/tp_pipe.gif" width="3" height="18" alt="" class="flt tp_pipe" /> <a href="frmSeatArrangement.aspx" class="flt tp_home">
+        Room Allotment</a>&nbsp; <img src="images/tp_pipe.gif" width="3" height="18" alt="" class="flt tp_pipe" /> <a href="frmshowsit.aspx" class="flt tp_home">
+        Show Sitting</a> <img src="images/tp_pipe.gif" width="3" height="18" alt="" class="flt tp_pipe" /> <a href="Default.aspx" class="flt tp_home">
+        Log Out</a> </p>
+  </div>
+  <!-- top panel ends here -->
+  <!-- content panel starts here -->
+  <div id="cpblock">
+    <div class="flt1 cpinner">
+      <div class="flt lp_block"> <img src="images/lp_imgpair.jpg" width="51" height="37" alt="" class="flt1 lp_imgpair" /> <span class="flt lp_txtmem">
+          Congratulation</span><br />
+        &nbsp;
+        <br />
+        &nbsp;&nbsp; <img src="images/lp_boxcorn1.gif" width="258" height="12" alt="" class="flt1 lp_boxtop1" />
+        <div class="flt1 lp_boxbg"> <span class="flt1 lp_txtour">Our Status</span><br />
+          <span class="flt1 lp_boxtxt">Thanks For Wisit This Site</span><br />
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; </div>
+        <img src="images/lp_boxcorn2.gif" width="258" height="12" alt="" class="flt1 lp_boxtop2" /> <img src="images/lp_boxcorn3.gif" width="260" height="15" alt="" class="flt1 lp_boxtop3" />
+        <div class="flt1 lp_box2bg"> <img src="images/lp_imgclient.jpg" width="45" height="40" alt="" class="flt1 lp_imgclient" /> <span class="flt lp_txtclint">client speaks</span> <span class="flt1 lp_box2txt">&#8220;You may conduct your financial conduct your financial operations in one of our branches.&#8221;<br />
+          <span style="float:right; color:#F3FF9F;">- Govt. Polytechnic</span></span> </div>
+        <img src="images/lp_boxcorn4.gif" width="260" height="14" alt="" class="flt1" /> </div>
+      <div class="flt rp_block"> <img src="images/rp_topcorn.gif" width="560" height="14" alt="" class="flt1 rp_topcornn" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+    </div>
+    <img src="images/cp_bottcorn.gif" width="898" height="20" alt="" class="flt1" /> </div>
+  <!-- content panel ends here -->
+  <!-- footer panel starts here -->
+  <div class="flt1 ft_bg"> <a href="" class="flt ft_txt">home</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="" class="flt ft_txt2">about Us</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="" class="flt ft_txt2">company</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="" class="flt ft_txt2">solutions</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="" class="flt ft_txt2">support</a> <img src="images/ft_sqrwhite.gif" width="3" height="3" alt="" class="flt ft_bult" /> <a href="" class="flt ft_txt2">contact us</a><br />
+    &nbsp;</div>
+</div>
+   
+ 
+    </form>
+</body>
+</html>
+
